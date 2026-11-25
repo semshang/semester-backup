@@ -1,0 +1,2 @@
+public class card payment sxtends payment {
+}

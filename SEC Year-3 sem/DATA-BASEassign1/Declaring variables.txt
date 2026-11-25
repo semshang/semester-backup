@@ -1,0 +1,13 @@
+Declaring variables
+
+DECLARE
+
+vc_firstname  varchar2(30):='SMITH':
+vc_surname    students.surname%type;
+vc_student_id NUMBER(2);
+
+BEGIN
+
+keyword DECLARE is used in anonymous blocks
+DECLARE keyword is NOT issued in named procedures
+

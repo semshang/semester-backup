@@ -1,0 +1,14 @@
+EXAMPLE
+
+procedure inserts a new subject into the subject_areas table
+
+CREATE OR REPLACE PROCEDURE proc_add_subject IS
+
+vc_subject_name subject_areas.subject_name%TYPE:='NEW SUBJECT';
+
+BEGIN
+
+INSERT INTO SUBJECT_AREAS
+VALUE(seq_subject_id.nextval,vc_subject_name);
+
+END proc_add_subject;

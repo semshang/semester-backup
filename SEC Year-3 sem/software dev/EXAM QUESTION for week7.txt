@@ -1,0 +1,23 @@
+EXAM QUESTION for week7
+a. 	Create an interface class called shape with the following method:
+-  	area() which returns the area of the shape
+		interface shape {
+			//method to calculate the area
+			double area();
+		}
+
+
+b.	create a concrete class called cube which is a type of shape with the following properties attribute edge 
+		//concrete class implement shape interface
+		class cube implement shape {
+			
+		}
+		   
+    @Override
+    public double area() {
+        // The surface area of a cube is 6 * edge^2
+        return 6 * edge * edge;
+    }
+}
+-	a constructor which takes parameters to set the edge attribute
+-	area() method which returns the area of a cube(which is 6 edge*edge)

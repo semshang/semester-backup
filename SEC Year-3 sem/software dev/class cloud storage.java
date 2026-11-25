@@ -1,0 +1,1 @@
+class cloud storage implements storage

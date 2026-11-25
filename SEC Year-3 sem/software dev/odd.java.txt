@@ -1,0 +1,21 @@
+write a java program to count the odd digits of a given number.
+ex. n=2376, no. of odd digits: 2
+
+import java.util.scanner;
+public class odd digit{
+	
+	public static void main(String[] args){
+	scanner sc = new scanner(system.in);
+	system.out.print("enter a number");
+	int number = sc.nextInt();
+	int count = 0;
+	while (number 1 = 0){
+		int temp = number % 10;
+		if( temp % 2 == 0)
+			count++;
+		number /= 10;
+	}
+	system.out.print('the number of odd in given number 	is: " +count);
+   }
+
+}

@@ -1,0 +1,5 @@
+public class creditcardpayment extends payment {
+	public void makepayment(){
+		system.out.print("processing esewa payment...");
+  }
+}

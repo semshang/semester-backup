@@ -1,0 +1,11 @@
+public class payment demo{
+	public static void main (String[] args){
+		payment payCard=new CreditCardPayment();
+		payement playEswa=new Esewapayment();
+		payCard.makepayment();
+		payCard.printReceipt();
+
+		payEsewa.makeprint();
+		payEsewa.printReceipt();
+	}
+}

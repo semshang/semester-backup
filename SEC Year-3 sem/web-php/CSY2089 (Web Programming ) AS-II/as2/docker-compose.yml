@@ -1,0 +1,39 @@
+services:
+
+  php:
+    build: .
+    container_name: php_app
+    volumes:
+      - ./jobs:/var/www/html
+    working_dir: /var/www/html
+    command: php -S 0.0.0.0:8000 -t /var/www/html/public
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mariadb:latest
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: jobs
+      MYSQL_USER: student
+      MYSQL_PASSWORD: student
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+
+  adminer:
+    image: adminer:latest
+    container_name: adminer_ui
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+
+volumes:
+  mysqldata:

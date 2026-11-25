@@ -1,0 +1,6 @@
+abstract class payment {
+	abstract void makepayment();
+	abstract void print receipt(){
+		system.out.println("thank you for payement")
+   }
+}

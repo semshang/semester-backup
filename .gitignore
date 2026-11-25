@@ -1,0 +1,10 @@
+# IDE and build output
+**/.tmpjava/
+**/.tmpjava
+**/out/
+**/out_test/
+**/.idea/
+**/.vscode/
+**/.venv/
+**/node_modules/
+*.log

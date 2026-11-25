@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital iPhone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="iphone">
+    <!-- Notch -->
+    <div class="notch"></div>
+
+    <!-- Lock Screen -->
+    <div class="screen lock active" id="lockScreen">
+        <div class="status-bar">
+            <span id="timeTop">9:41</span>
+            <span>📶 🔋</span>
+        </div>
+
+        <!-- App Container -->
+<div class="screen app-screen" id="appScreen">
+    <div class="app-header">
+        <button id="homeBtn">⬅ Home</button>
+        <span id="appTitle">App</span>
+    </div>
+
+    <iframe id="appFrame"></iframe>
+</div>
+
+<div class="app" onclick="openApp('Flappy Bird','apps/flappy/index.html')">🐦</div>
+<div class="app" onclick="openApp('Car Racing','apps/racing/index.html')">🏎️</div>
+<div class="app" onclick="openApp('Tower','apps/tower/index.html')">🏗️</div>
+
+
+
+        
+
+        <div class="c
